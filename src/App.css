@@ -18,15 +18,15 @@ body {
   box-shadow:0 0 10px rgba(0,0,0,0.1);
   border-radius:4px;
 }
-.qusetion-section  {
+.question-section  {
   text-align: center;
 }
-.qusetion-section h2 {
+.question-section h2 {
   margin: 10px 0px;
   font-weight: 600;
   color: #3498db;
 }
-.qusetion-section p {
+.question-section p {
   font-weight:500;
 }
 .options{
