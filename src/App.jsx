@@ -6,13 +6,17 @@ import quetionsData from "./questions.json";
 function App() {
   const [currentQuestion, setCurrentQuestion]=useState(0);
   const [score,setScore] = useState(0);
+  const [showScore, setshowScore] = useState(true);
+  const [timer, setTimer] = useState(100);
   return (
     <>
       <div className="quiz-app">
-        <div className="score-section" style={{display:"none"}}>
+        {showScore ?(
+          <div className="score-section">
         <h2>Your Score: 3/3</h2>
         <button>Restart</button>
         </div>
+        ):(
         <div className="question-section">
           <h2>Question 1</h2>
           <p>This is sample Question</p>
@@ -24,6 +28,8 @@ function App() {
           </div>
           <div className="timer">Time Left:5s</div>
         </div>
+        )
+      }
       </div>
     </>
   );
