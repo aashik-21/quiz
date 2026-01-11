@@ -1,11 +1,15 @@
-import { useState } from 'react'
+import { useState } from "react";
 import "./App.css"
 
+import quetionsData from "./questions.json";
+
 function App() {
+  const [currentQuestion, setCurrentQuestion]=useState(0);
+  const [score,setScore] = useState(0);
   return (
     <>
       <div className="quiz-app">
-        <div className="score-section" >
+        <div className="score-section" style={{display:"none"}}>
         <h2>Your Score: 3/3</h2>
         <button>Restart</button>
         </div>
